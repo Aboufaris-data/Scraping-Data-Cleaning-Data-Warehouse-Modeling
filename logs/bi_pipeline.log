@@ -1,34 +1,12 @@
-2026-05-06 12:27:12,913 - INFO - \U0001f680 Starting BI pipeline...
-2026-05-06 12:27:12,942 - INFO - \u2705 Database connected
-2026-05-06 12:27:13,024 - INFO - \u2705 Tables created
-2026-05-06 12:27:13,024 - ERROR - \u274c Error loading CSV: [Errno 2] No such file or directory: 'clean/avito_data_clean.csv'
-2026-05-06 12:28:48,184 - INFO - \U0001f680 Starting BI pipeline...
-2026-05-06 12:28:48,211 - INFO - \u2705 Database connected
-2026-05-06 12:28:48,252 - INFO - \u2705 Tables created
-2026-05-06 12:28:48,264 - INFO - \U0001f4c2 Loaded clean data: 319 rows
-2026-05-06 12:28:48,299 - INFO - \U0001f9f9 Old data cleared
-2026-05-06 12:28:48,316 - INFO - \U0001f4e6 Dimensions loaded
-2026-05-06 12:50:59,440 - INFO - \U0001f680 Starting BI pipeline...
-2026-05-06 12:50:59,472 - INFO - \u2705 Database connected
-2026-05-06 12:50:59,553 - INFO - \u2705 Tables created
-2026-05-06 12:50:59,556 - INFO - \U0001f4c2 Loaded clean data: 319 rows
-2026-05-06 12:50:59,576 - INFO - \U0001f4e6 Dimensions loaded
-2026-05-06 12:50:59,611 - INFO - \u2705 Fact table loaded: 319 rows
-2026-05-06 14:47:32,097 - INFO - \U0001f680 Starting BI pipeline...
-2026-05-06 14:47:32,123 - INFO - \u2705 Database connected
-2026-05-06 14:47:32,218 - INFO - \u2705 Tables created
-2026-05-06 14:47:32,229 - INFO - \U0001f4c2 Loaded clean data: 319 rows
-2026-05-06 14:47:32,247 - INFO - \U0001f4e6 Dimensions loaded
-2026-05-06 14:47:32,278 - INFO - \u2705 Fact table loaded: 319 rows
-2026-05-06 14:49:42,601 - INFO - \U0001f680 Starting BI pipeline...
-2026-05-06 14:49:42,628 - INFO - \u2705 Database connected
-2026-05-06 14:49:42,712 - INFO - \u2705 Tables created
-2026-05-06 14:49:42,714 - INFO - \U0001f4c2 Loaded clean data: 319 rows
-2026-05-06 14:49:42,732 - INFO - \U0001f4e6 Dimensions loaded
-2026-05-06 14:49:42,763 - INFO - \u2705 Fact table loaded: 319 rows
-2026-05-06 14:54:07,007 - INFO - \U0001f680 Starting BI pipeline...
-2026-05-06 14:54:07,038 - INFO - \u2705 Database connected
-2026-05-06 14:54:07,099 - INFO - \u2705 Tables created
-2026-05-06 14:54:07,102 - INFO - \U0001f4c2 Loaded clean data: 319 rows
-2026-05-06 14:54:07,121 - INFO - \U0001f4e6 Dimensions loaded
-2026-05-06 14:54:07,156 - INFO - \u2705 Fact table loaded: 319 rows
+2026-05-07 11:24:21,243 - INFO - Starting BI pipeline...
+2026-05-07 11:24:21,273 - INFO - Database connected
+2026-05-07 11:24:49,009 - INFO - Starting BI pipeline...
+2026-05-07 11:24:49,039 - INFO - Database connected
+2026-05-07 11:25:43,272 - INFO - Starting BI pipeline...
+2026-05-07 11:25:43,300 - INFO - Database connected
+2026-05-07 11:26:02,853 - INFO - Starting BI pipeline...
+2026-05-07 11:26:02,881 - INFO - Database connected
+2026-05-07 11:26:02,931 - INFO - Table OBT is created
+2026-05-07 11:26:02,973 - INFO - OBT table loaded: 319 rows
+2026-05-07 11:31:59,958 - INFO - Starting BI pipeline...
+2026-05-07 11:31:59,987 - INFO - Database connected

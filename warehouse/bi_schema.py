@@ -14,7 +14,7 @@ logging.basicConfig(
     format="%(asctime)s - %(levelname)s - %(message)s"
 )
 
-logging.info("🚀 Starting BI pipeline...")
+logging.info("Starting BI pipeline...")
 
 # LOAD ENV + DB CONNECTION
 load_dotenv()
@@ -25,10 +25,10 @@ def get_engine():
             f"postgresql://{os.getenv('DB_USER')}:{os.getenv('DB_PASS')}"
             f"@{os.getenv('DB_HOST')}:{os.getenv('DB_PORT')}/{os.getenv('DB_NAME')}"
         )
-        logging.info("✅ Database connected")
+        logging.info("Database connected")
         return engine
     except Exception as e:
-        logging.error(f"❌ DB connection error: {e}")
+        logging.error(f"DB connection error: {e}")
         raise
 
 engine = get_engine()
@@ -76,11 +76,11 @@ with engine.begin() as conn:
         );
     """))
 
-logging.info("✅ Tables created")
+logging.info("Tables created")
 
 # LOAD CLEAN DATA
 df = pd.read_csv(r"C:\Users\user\Desktop\Scraping, Data Cleaning & Data Warehouse Modeling\data\avito_data_clean.csv")
-logging.info(f"📂 Loaded clean data: {len(df)} rows")
+logging.info(f"Loaded clean data: {len(df)} rows")
 
 # PREPARE DIMENSIONS
 df_dim_location = df[["ville", "quartier"]].drop_duplicates()
@@ -92,7 +92,7 @@ df_dim_location.to_sql("dim_location", engine, schema="bi_schema", if_exists="ap
 df_dim_property.to_sql("dim_property", engine, schema="bi_schema", if_exists="append", index=False)
 df_dim_price.to_sql("dim_price", engine, schema="bi_schema", if_exists="append", index=False)
 
-logging.info("📦 Dimensions loaded")
+logging.info("Dimensions loaded")
 
 # RELOAD DIMENSIONS WITH IDs
 df_dim_location = pd.read_sql("SELECT * FROM bi_schema.dim_location", engine)
@@ -127,6 +127,4 @@ df_fact.to_sql(
     chunksize=500
 )
 
-logging.info(f"✅ Fact table loaded: {len(df_fact)} rows")
-
-print("🎯 BI Pipeline completed successfully!")
+logging.info(f"Fact table loaded: {len(df_fact)} rows")
